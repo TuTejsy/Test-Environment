@@ -10,4 +10,5 @@
 
 ## Problem Description:
 
-    When we use hook useState with realm object re-render doesn't happen after realm object modified in DEBUG mode, but it does in RELEASE mode (see useCount.js) 
+    When we use hook useState with realm object re-render doesn't happen after realm 
+    object modified in DEBUG mode, but it does in RELEASE mode (see useCount.js) 

@@ -21,7 +21,7 @@ function LabelContainer() {
         <Text style={styles.btnText}>Increase</Text>
       </TouchableOpacity>
       <Text style={styles.description}>
-        Counter increase in DEBUG mode and it doesn't increase in RELEASE mode
+        Counter increase in DEBUG mode but it doesn't increase in RELEASE mode
       </Text>
     </View>
   );
