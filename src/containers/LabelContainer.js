@@ -20,6 +20,9 @@ function LabelContainer() {
       <TouchableOpacity style={styles.btn} onPress={onBtnPress}>
         <Text style={styles.btnText}>Increase</Text>
       </TouchableOpacity>
+      <Text style={styles.description}>
+        Counter increase in DEBUG mode and it doesn't increase in RELEASE mode
+      </Text>
     </View>
   );
 }
@@ -40,12 +43,21 @@ const styles = StyleSheet.create({
     height: 50,
     marginTop: 30,
     alignItems: 'center',
-    backgroundColor: 'green',
+    borderRadius: 5,
+    backgroundColor: '#27AE60',
   },
   btnText: {
     fontWeight: '600',
     color: '#ffffff',
     fontSize: 40,
+  },
+  description: {
+    marginTop: 50,
+    fontWeight: '400',
+    paddingHorizontal: 25,
+    textAlign: 'center',
+    color: '#EB5757',
+    fontSize: 18,
   },
 });
 

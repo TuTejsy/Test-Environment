@@ -16,7 +16,8 @@ function useCount() {
       const listener = (nextCountObj, {changedProperties, deleted}) => {
         const isAnythingChanged = deleted || changedProperties.length;
         if (isAnythingChanged) {
-          // TODO: https://app.clubhouse.io/sharekey/story/7703/create-issue-in-realm-github-about-mutating-objects
+          // !!!!!!!!!
+          // It triggers rerender in DEBUG mode, but in RELEASE mode we forced to use  setCountObj({...nextCountObj});
           setCountObj(nextCountObj);
         }
       };
